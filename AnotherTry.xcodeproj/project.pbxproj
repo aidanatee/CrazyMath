@@ -414,6 +414,7 @@
 				DDC67F031EE947540013E7BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDC67F041EE947540013E7BD /* Build configuration list for PBXNativeTarget "AnotherTryUITests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				DDC67F061EE947540013E7BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
