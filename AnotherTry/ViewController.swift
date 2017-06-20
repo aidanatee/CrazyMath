@@ -25,6 +25,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+       
+        
+        view.addGestureRecognizer(tap)
+        
         newQuestion()
         Timer.scheduledTimer(timeInterval: 0.1,
                                           target: self,
@@ -39,6 +44,12 @@ class ViewController: UIViewController {
         
         
     }
+    
+    func dismissKeyboard() {
+     
+        view.endEditing(true)
+    }
+  
     
  
   
@@ -122,7 +133,8 @@ class ViewController: UIViewController {
         let answer = Int(userInput.text!)
         let rightAns = Int(x * y)
         if answer == rightAns {
-            
+            winCounter += 1
+            Score.text = "\(winCounter)"
          
         }
         else{
